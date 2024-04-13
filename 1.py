@@ -1,3 +1,4 @@
+#Вариант 18. Натуральные числа. Выводит на экран числа, убирая нечетные цифры в каждом четном по порядку числе. Убранные цифры печать отдельно прописью.
 def remove_odd_digits(num):
     even_nums = [int(x) for x in str(num) if int(x) % 2 == 0]
     removed_nums = [int(x) for x in str(num) if int(x) % 2 != 0]
