@@ -1,4 +1,3 @@
-#Вариант 18. Натуральные числа. Выводит на экран числа, убирая нечетные цифры в каждом четном по порядку числе. Убранные цифры печать отдельно прописью.
 def remove_odd_digits(num):
     even_nums = [int(x) for x in str(num) if int(x) % 2 == 0]
     removed_nums = [int(x) for x in str(num) if int(x) % 2 != 0]
@@ -25,11 +24,5 @@ def process_sequence(sequence):
 # Чтение последовательности из файла
 with open('sequence.txt', 'r') as file:
     sequence = file.read()
-
-process_sequence(sequence)
-
-
-# Эмулируем бесконечную последовательность символов
-sequence = "abc;123;456;def;789;012;ghi"
 
 process_sequence(sequence)
